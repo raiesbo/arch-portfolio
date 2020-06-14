@@ -1,6 +1,5 @@
 body {
-    margin: 10px;
-    background-color: red;
+    margin: 30px;
 }
 
 /*Here starts the MENU styling*/
@@ -11,15 +10,19 @@ body {
     margin: 0;
     align-content: center;
     position: relative;
-    background-color: aqua;
     top: 0;
 }
 
 .Title {
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     font-size: 140%;
-    margin-bottom: 0;
     display: inline;
+}
+
+.Title a{
+    color: black;
+    text-decoration: none;
 }
 
 .subTitle {
@@ -36,18 +39,15 @@ body {
     width: 200px;
     height: 100vh;
     margin-bottom: 10px;
-    background-color: brown;
     text-align: end;
 }
 
 
 .nav-links{
-    background-color: aquamarine;
     text-align: right;
     display: block;
     margin-top: 30%;
     font-size: 100%;
-    background-color: blueviolet;
     list-style: none;
 }
 
@@ -55,7 +55,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 300;
     display: block;
     margin-bottom: 15px;
 
@@ -120,16 +120,12 @@ body {
  }
 
 
-
-
-
 /*Here finishes the MENU styling*/
 
 /*Here starts the CONTENT styling*/
 
 
 .container {
-    background-color: orange;
     padding: 0;
     margin: 0 0 0 220px;
 }
@@ -152,14 +148,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 30px;
     row-gap: 30px;
-    background-color: blue;
     padding: 0;
 }
 
-.project {
-    background-color: blueviolet;
-    filter: grayscale(100%);
-}
 
 .projectTitle{
     font-family: 'Roboto', sans-serif;
@@ -176,12 +167,16 @@ body {
 }
 
 .project img {
+    filter: grayscale(100%);
     width: 100%;
+    transition: 500ms;
 }
 
-.project:hover {
+.projects img:hover{
     filter: grayscale(0%);
 }
+
+
 
 /*Here finishes the PROJECTS SECTION styling*/
 
@@ -213,7 +208,6 @@ body {
     margin: 0 auto 0 auto;
     align-content: center;
     position: fixed;
-    background-color: aqua;
     bottom: 10px;
 }
 
@@ -222,6 +216,7 @@ body {
     margin-left: 37px;
     padding: 0;
     width: 13%;
+    transition: 500ms;
 }
 
 .SM_Icon:hover{
