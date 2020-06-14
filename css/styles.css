@@ -1,0 +1,238 @@
+body {
+    margin: 10px;
+    background-color: red;
+}
+
+/*Here starts the MENU styling*/
+
+.header{
+    width: 200px;
+    height: 60px;
+    margin: 0;
+    align-content: center;
+    position: relative;
+    background-color: aqua;
+    top: 0;
+}
+
+.Title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 140%;
+    margin-bottom: 0;
+    display: inline;
+}
+
+.subTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 130%;
+    margin: 0;
+    text-decoration: none;
+    display: inline;
+}
+
+.sideBar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    margin-bottom: 10px;
+    background-color: brown;
+    text-align: end;
+}
+
+
+.nav-links{
+    background-color: aquamarine;
+    text-align: right;
+    display: block;
+    margin-top: 30%;
+    font-size: 100%;
+    background-color: blueviolet;
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+.nav-links a:hover{
+    font-weight: 600;
+}
+
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    visibility: hidden;
+ }
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow: hidden;
+    }
+
+     .sideBar{
+         position: relative;
+         display: flex;
+         align-items: center;
+         height: 60px;
+         width: 100%;
+         top: 0;
+         vertical-align: middle;
+     }
+
+    .burger{
+        position: absolute;
+        right: 40px;
+    }
+
+     .burger div {
+        visibility: visible;
+     }
+
+     .header {
+        display: inline-block;
+        position: relative;
+         
+     }
+
+     .nav-links{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+     }
+ }
+
+
+
+
+
+/*Here finishes the MENU styling*/
+
+/*Here starts the CONTENT styling*/
+
+
+.container {
+    background-color: orange;
+    padding: 0;
+    margin: 0 0 0 220px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+       position: relative;
+       margin: 0 0 0 0;
+       display: none;
+    }
+
+}
+
+/*Here finishes the MAIN CONTENT CONTAINER styling*/
+
+/*Here starts the PROJECTS SECTION styling*/
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 30px;
+    row-gap: 30px;
+    background-color: blue;
+    padding: 0;
+}
+
+.project {
+    background-color: blueviolet;
+    filter: grayscale(100%);
+}
+
+.projectTitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 90%;
+    margin: 1%;
+}
+
+.projectDescription{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 90%;
+    margin: 1%;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project:hover {
+    filter: grayscale(0%);
+}
+
+/*Here finishes the PROJECTS SECTION styling*/
+
+/*Here starts the CV styling*/
+
+
+
+
+
+
+
+
+/*Here finishes the CV styling*/
+
+/*Here starts the CONTACT ME styling*/
+
+
+
+
+
+
+/*Here finishes the CONTACT ME styling*/
+
+/*Here starts the SOCIAL MEDIA styling*/
+
+
+.socialMedia {
+    width: 200px;
+    margin: 0 auto 0 auto;
+    align-content: center;
+    position: fixed;
+    background-color: aqua;
+    bottom: 10px;
+}
+
+.SM_Icon {
+    align-self: end;
+    margin-left: 37px;
+    padding: 0;
+    width: 13%;
+}
+
+.SM_Icon:hover{
+    filter: invert(75%);
+}
+
+@media screen and (max-width: 768px) {
+    .socialMedia {
+       display: block;
+       margin: 30px auto 10px auto;
+       align-content: center;
+       position: relative;
+   }
+}
