@@ -2,6 +2,7 @@ body {
     margin: 30px;
 }
 
+
 /*Here starts the MENU styling*/
 
 .header{
@@ -100,7 +101,7 @@ body {
      .header {
         display: inline-block;
         position: relative;
-         
+
      }
 
      .nav-links{
@@ -128,7 +129,10 @@ body {
 .container {
     padding: 0;
     margin: 0 0 0 220px;
+    animation-duration: 750ms;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .container {
@@ -149,6 +153,8 @@ body {
     column-gap: 30px;
     row-gap: 30px;
     padding: 0;
+    animation-duration: 2s;
+    animation-name: text;
 }
 
 
@@ -179,12 +185,39 @@ body {
 
 
 /*Here finishes the PROJECTS SECTION styling*/
+/*Here starts the PROJECT LIST styling*/
 
+
+.projectList {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 135px;
+  width: 750px;
+}
+
+
+/*Here finishes the PROJECT LIST styling*/
 /*Here starts the CV styling*/
 
+.cv {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 170px;
+  width: 750px;
+}
 
+table {
+  border-spacing: 10px;
+}
 
+th{
+  font-weight: 300;
+  text-decoration: none;
+  text-align: left;
+  font-size: 100%;
+}
 
+.thick {
+    font-weight: 450;
+}
 
 
 
@@ -193,7 +226,35 @@ body {
 
 /*Here starts the CONTACT ME styling*/
 
+.contactMe {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 205px;
+  width: 750px;
+  }
 
+.subTitlePage {
+  font-weight: 600;
+  animation-duration: 2s;
+  animation-name: text;
+}
+
+.textStandard {
+  font-weight: 300;
+  text-decoration: none;
+  animation-duration: 4s;
+  animation-name: text;
+}
+
+.textStandard a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+@keyframes text {
+0%   {opacity: 0%}
+100% {opacity: 100%;}
 
 
 
