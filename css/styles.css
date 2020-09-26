@@ -16,7 +16,7 @@ body {
 
 .Title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 140%;
     display: inline;
 }
@@ -59,7 +59,7 @@ body {
     font-weight: 300;
     display: block;
     margin-bottom: 15px;
-
+    transition: 300ms;
 }
 
 .nav-links a:hover{
@@ -120,7 +120,6 @@ body {
      }
  }
 
-
 /*Here finishes the MENU styling*/
 
 /*Here starts the CONTENT styling*/
@@ -149,7 +148,7 @@ body {
 
 .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 30px;
     row-gap: 30px;
     padding: 0;
@@ -172,14 +171,17 @@ body {
     margin: 1%;
 }
 
+
 .project img {
     filter: grayscale(100%);
     width: 100%;
-    transition: 500ms;
+    transition: all 400ms ease-out;
+    cursor: pointer;
 }
 
 .projects img:hover{
     filter: grayscale(0%);
+    transform: scale(1.05);
 }
 
 
@@ -190,8 +192,8 @@ body {
 
 .projectList {
   font-family: 'Roboto', sans-serif;
-  padding-top: 135px;
-  width: 750px;
+  padding-top: 134px;
+  width: 700px;
 }
 
 
@@ -200,8 +202,8 @@ body {
 
 .cv {
   font-family: 'Roboto', sans-serif;
-  padding-top: 170px;
-  width: 750px;
+  padding-top: 167px;
+  width: 700px;
 }
 
 table {
@@ -212,24 +214,54 @@ th{
   font-weight: 300;
   text-decoration: none;
   text-align: left;
+  vertical-align: center;
   font-size: 100%;
 }
 
 .thick {
-    font-weight: 450;
+    font-weight: 300;
+}
+
+.thick2 {
+    font-weight: 400;
+}
+
+.thick3 {
+    font-weight: 500;
 }
 
 
+.icons {
+  opacity: 65%;
+  transition-duration: 300ms;
+}
+
+.icons:hover {
+  opacity: 100%;
+  transform: scale(1.1);
+}
 
 
 /*Here finishes the CV styling*/
+
+/*Here starts the ABOUT ME styling*/
+
+
+.aboutMe {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 202px;
+  width: 700px;
+  }
+
+
+/*Here finishes the ABOUT ME styling*/
 
 /*Here starts the CONTACT ME styling*/
 
 .contactMe {
   font-family: 'Roboto', sans-serif;
-  padding-top: 205px;
-  width: 750px;
+  padding-top: 236px;
+  width: 700px;
   }
 
 .subTitlePage {
@@ -292,3 +324,7 @@ th{
        position: relative;
    }
 }
+
+/*Here finishes the SOCIAL MEDIA styling*/
+
+/*Here starts the EACH PROJECT styling*/

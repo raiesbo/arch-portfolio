@@ -1,0 +1,42 @@
+{
+  "project1": {
+    "name": "PW6",
+    "office": "rundzwei Architekten",
+    "location": "Berlin, Germany",
+    "type": "Residential",
+    "client": "Private",
+    "date": "under construction",
+    "position": "Junior Architect",
+    "link": "https://www.rundzwei.de/en/content/063pw-6"
+  },
+  "project2": {
+    "name": "Kleine Bremer Höhe",
+    "office": "rundzwei Architekten",
+    "location": "Berlin, Germany",
+    "type": "Residential",
+    "client": "Private",
+    "date": "under construction",
+    "position": "Junior Architect",
+    "link": "https://www.rundzwei.de/en/content/055kleine-bremer-h%C3%B6he"
+  },
+  "project3": {
+    "name": "Baham House",
+    "office": "Antonio Altarriba Arquitecto",
+    "location": "Moraira, Spain",
+    "type": "Residential",
+    "client": "Private",
+    "date": "10.2019",
+    "position": "Collaborator",
+    "link": "https://www.antonioaltarribaarquitecto.com/baham-house"
+  },
+  "project4": {
+    "name": "La Cañada House",
+    "office": "Antonio Altarriba Arquitecto",
+    "location": "La Canyada, Spain",
+    "type": "Residential",
+    "client": "Private",
+    "date": "11.2017",
+    "position": "Collaborator",
+    "link": "https://www.antonioaltarribaarquitecto.com/la-canada-house"
+  }
+}

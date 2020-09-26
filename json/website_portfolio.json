@@ -1,0 +1,38 @@
+{
+  "project1": {
+    "title": "House for an Artist",
+    "subtitle": "#AcademicProject #Residential",
+    "img": "img/ArtistHouse_Thumbnail.png",
+    "link": "#"
+  },
+  "project2": {
+    "title": "House for an Artist",
+    "subtitle": "#AcademicProject #Residential",
+    "img": "img/ArtistHouse_Thumbnail.png",
+    "link": "#"
+  },
+  "project3": {
+    "title": "House for an Artist",
+    "subtitle": "#AcademicProject #Residential",
+    "img": "img/ArtistHouse_Thumbnail.png",
+    "link": "#"
+  },
+  "project4": {
+    "title": "House for an Artist",
+    "subtitle": "#AcademicProject #Residential",
+    "img": "img/ArtistHouse_Thumbnail.png",
+    "link": "#"
+  },
+  "project5": {
+    "title": "House for an Artist",
+    "subtitle": "#AcademicProject #Residential",
+    "img": "img/ArtistHouse_Thumbnail.png",
+    "link": "#"
+  },
+  "project6": {
+    "title": "House for an Artist",
+    "subtitle": "#AcademicProject #Residential",
+    "img": "img/ArtistHouse_Thumbnail.png",
+    "link": "#"
+  }
+}
