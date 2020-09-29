@@ -21,8 +21,10 @@ $("a.link_projectMenu").click(function(){
     $(".projectList").show(500);
   });
 */
+/*
 var trigger = $('.navL');
 var container = $('.container');
+*/
 /*
 $(document).ready(function () {
   // Set trigger and container variables
@@ -40,6 +42,10 @@ trigger.on('click', function(){
   return false;
 })
 */
+/*
 AOS.init({
   duration: 1200,
 })
+*/
+
+

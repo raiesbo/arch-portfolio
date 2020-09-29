@@ -2,7 +2,9 @@
 .eachProject {
 	font-family: 'Roboto', sans-serif;
 	padding-top: 120px;
-	width: 700px;
+	/*width: 700px;*/
+	display: grid;
+    grid-template-columns: minmax(300px, 700px);
   }
 
 .each_projectTitle {
@@ -15,6 +17,8 @@
 }
 
 .each_projectInfo {
+	display: flex;
+    flex-direction: column;
 	font-weight: 400;
 	text-decoration: none;
 	animation-duration: 4s;
@@ -34,4 +38,10 @@
 	width: 100%;
 	animation-duration: 3s;
 	animation-name: text;
+}
+
+@media screen and (max-width: 768px) {
+    .eachProject {
+       padding-top: 20px;
+    }
 }

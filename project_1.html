@@ -12,9 +12,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/styles2.css">
+        <link rel="stylesheet" href="css/styles4.css">
         <link rel="icon" href="icons/favicon.ico" type="ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet"> -->
     </head>
     <body>
         <div class="sideBar">
@@ -23,29 +23,30 @@
                 <h3 class="subTitle">Architecture Portfolio</h3>
             </div>
 
-            <ul class="nav-links">
+              <ul class="nav-links">
                 <li>
-                    <a href="index.html" class="link_projectMenu" data-target="projects" ><strong>Portfolio</strong></a>
+                    <a href="index.html" class="link_content" data-target="projects" ><strong>Portfolio</strong></a>
                 </li>
                 <li>
-                    <a href="projectList.html" class="link_projectList" data-target="projectsList" >Projects List</a>
+                    <a href="projectList.html" class="link_content" data-target="projectsList" >Projects List</a>
                 </li>
                 <li>
-                    <a href="cv.html" class="link_curriculumVitae" data-target="CV" >Curriculum</a>
+                    <a href="cv.html" class="link_content" data-target="CV" >Curriculum</a>
                 </li>
                 <li>
-                    <a href="aboutMe.html" class="link_projectAbout" data-target="projects" >About</a>
+                    <a href="aboutMe.html" class="link_content" data-target="projects" >About</a>
                 </li>
                 <li>
                     <a href="contactMe.html" class="link_content" data-target="ContactMe" >Contact</a>
                 </li>
             </ul>
-
+<!--
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
+-->
         </div>
 
         <div class="container">
@@ -54,17 +55,21 @@
             <div class="eachProject">
                 <p class="each_projectTitle">House for an Artist</p>
                 <p class="each_projectInfo">Gandía, Spain | 2014 | #AcademicProject #Residencial</p>
-                <!--<p class="each_projectInfo">Team</p>-->
-                <img src="img/p_artistsHouse/p1_diagrams.jpg" alt="p1_diagrams">
+                <img src="img/p_artistsHouse/p1_diagrams.jpg" alt="Diagrams" data-original="p1_diagrams_2000px.jpg"/>
                 <p class="each_projectText">This housing project is located in Gandia, specially designed with a Valencian artist, José María Yturralde, who is a painter.</p>
-                <img src="img/p_artistsHouse/p1_lageplan.jpg" alt="Lageplan">
+                <img src="img/p_artistsHouse/p1_lageplan.jpg" alt="Site plan" data-original="p1_lageplan_2000px.jpg"/>
                 <p class="each_projectText">The project is based on three main points: first of all is his personal life; secondly, a thoroughly research on the land and the city in general; and finally, an analysis on the sketches, drawings and designs of the artist himself. After putting together all the points we come up with a very personal play of geometry, circulation and space which intends to transmit the personality of the inhabiter.</p>
-                <img src="img/p_artistsHouse/p1_ansichten.jpg" alt="Render">
+                <img src="img/p_artistsHouse/p1_ansichten.jpg" alt="Facade" data-original="p1_ansichten_2000px.jpg"/>
                 <p class="each_projectText">Two main volumens compose a house where the non-constructud space is playing the main rol of the project as it is granted as public area to enrich the urban space. On the other hand, the pure geometries, that compose the interior areas, expreses clearly the division of functions from the outside.</p>
-                <img src="img/p_artistsHouse/p1_grundrisse.jpg" alt="Floor plans">
+                <img src="img/p_artistsHouse/p1_grundrisse.jpg" alt="Floor plans" data-original="p1_grundrisse_2000px.jpg"/>
                 <p class="each_projectText">The building is located next to the river and has breath taking views of the city. It has direct access to green spaces and paths next to the river which helps create a more pure atmosphere as well.</p>
-                <img src="img/p_artistsHouse/p1_schnitt.jpg" alt="Schnitt">
-                <img src="img/p_artistsHouse/p1_render.jpg" alt="Render">
+                <img src="img/p_artistsHouse/p1_schnitt.jpg" alt="Section" data-original="p1_schnitt_2000px.jpg"/>
+                <img src="img/p_artistsHouse/p1_render.jpg" alt="Exterior perspective" data-original="p1_render_2000px.jpg"/>
+            </div>
+
+            <div class="modal">
+                <img src="img/p_artistsHouse/p1_diagrams.jpg" alt="" class="full-img"/>
+                <p class="caption">Ground Floor</p>
             </div>
 
   <!-- From here is all what we can modify for each page:-->
@@ -77,5 +82,7 @@
         </div>-->
 
         <script src="js/app.js" async defer></script>
+        <script src="js/popImg.js" async defer></script>
     </body>
 </html>
+

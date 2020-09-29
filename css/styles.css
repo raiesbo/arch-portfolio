@@ -75,23 +75,25 @@ body {
  }
 
 @media screen and (max-width: 768px) {
+  
     body{
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
-
+  
      .sideBar{
-         position: relative;
-         display: flex;
-         align-items: center;
-         height: 60px;
-         width: 100%;
-         top: 0;
-         vertical-align: middle;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        top: 0;
+        vertical-align: middle;
      }
 
     .burger{
         position: absolute;
-        right: 40px;
+        right: 20px;
     }
 
      .burger div {
@@ -109,14 +111,22 @@ body {
         top: 0;
         right: 0;
         left: 0;
-        height: 100vh;
-
+        height: 50px;
+        width: 100%;
+        margin-top: 70px;
         top: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        align-items: left;
+        padding-left: 0;
+        font-size: 80%;
+        /*display: flex;
+        flex-direction: row;*/
+        white-space: nowrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     }
 
-
+     .link_content{
+      margin-right: 10px;
      }
  }
 
@@ -135,9 +145,10 @@ body {
 
 @media screen and (max-width: 768px) {
     .container {
-       position: relative;
-       margin: 0 0 0 0;
-       display: none;
+      position: relative;
+      margin: 50px 0 0 0;
+      overflow-y: auto; 
+      /*display: none;*/
     }
 
 }
@@ -193,21 +204,31 @@ body {
 .projectList {
   font-family: 'Roboto', sans-serif;
   padding-top: 134px;
-  width: 700px;
+  /*width: 700px;*/
+  display: grid;
+  grid-template-columns: minmax(300px, 700px);
 }
 
+@media screen and (max-width: 768px) {
+    .projectList {
+       padding-top: 0px;
+    }
+}
 
 /*Here finishes the PROJECT LIST styling*/
+
 /*Here starts the CV styling*/
 
 .cv {
   font-family: 'Roboto', sans-serif;
   padding-top: 167px;
-  width: 700px;
+  /*width: 700px;*/
+  display: grid;
+  grid-template-columns: minmax(300px, 700px);
 }
 
 table {
-  border-spacing: 10px;
+  border-spacing: 0 10px;
 }
 
 th{
@@ -241,6 +262,11 @@ th{
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 768px) {
+    .cv {
+       padding-top: 0px;
+    }
+}
 
 /*Here finishes the CV styling*/
 
@@ -250,9 +276,16 @@ th{
 .aboutMe {
   font-family: 'Roboto', sans-serif;
   padding-top: 202px;
-  width: 700px;
-  }
+  /*width: 700px;*/
+  display: grid;
+  grid-template-columns: minmax(300px, 700px);
+}
 
+@media screen and (max-width: 768px) {
+    .aboutMe {
+       padding-top: 0px;
+    }
+}
 
 /*Here finishes the ABOUT ME styling*/
 
@@ -261,8 +294,10 @@ th{
 .contactMe {
   font-family: 'Roboto', sans-serif;
   padding-top: 236px;
-  width: 700px;
-  }
+  /*width: 700px;*/
+  display: grid;
+  grid-template-columns: minmax(300px, 700px);
+}
 
 .subTitlePage {
   font-weight: 600;
@@ -282,7 +317,11 @@ th{
   text-decoration: none;
 }
 
-
+@media screen and (max-width: 768px) {
+    .contactMe {
+       padding-top: 0px;
+    }
+}
 
 @keyframes text {
 0%   {opacity: 0%}
@@ -290,11 +329,11 @@ th{
 
 
 
-
 /*Here finishes the CONTACT ME styling*/
 
 /*Here starts the SOCIAL MEDIA styling*/
 
+/*
 
 .socialMedia {
     width: 200px;
@@ -325,6 +364,8 @@ th{
    }
 }
 
+*/
+
 /*Here finishes the SOCIAL MEDIA styling*/
 
-/*Here starts the EACH PROJECT styling*/
+

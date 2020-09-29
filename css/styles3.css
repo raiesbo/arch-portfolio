@@ -1,0 +1,29 @@
+.skills_container {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: left;
+    min-width: 200px;
+    max-width: 500px;
+    white-space: nowrap
+}
+
+.skills {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 200px;
+}
+
+.skill {
+	margin-bottom: 15px;
+	width: 50px;
+	text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+    .skills_container {
+    	display: grid;
+    	grid-template-columns: 1fr;
+    }
+
+}
