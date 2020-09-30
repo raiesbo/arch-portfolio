@@ -68,7 +68,7 @@ body {
 
 .burger div {
     width: 25px;
-    height: 5px;
+    height: 3px;
     background-color: black;
     margin: 5px;
     visibility: hidden;
@@ -81,7 +81,8 @@ body {
         overflow-x: hidden;
     }
   
-     .sideBar{
+    .sideBar{
+        /*background-color: blue;*/
         position: relative;
         display: flex;
         align-items: center;
@@ -89,45 +90,70 @@ body {
         width: 100%;
         top: 0;
         vertical-align: middle;
-     }
+    }
 
     .burger{
         position: absolute;
-        right: 20px;
+        right: 5px;
     }
 
-     .burger div {
+    .burger div {
         visibility: visible;
-     }
+        transition: all 0.3s ease-in;
+    }
 
-     .header {
+    .header {
         display: inline-block;
         position: relative;
+    }
 
-     }
-
-     .nav-links{
+      .nav-links{
+        background-color: rgba(255,255,255, 0);
         position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 400px;
         width: 100%;
-        margin-top: 70px;
-        top: 0px;
-        align-items: left;
-        padding-left: 0;
-        font-size: 80%;
-        /*display: flex;
-        flex-direction: row;*/
-        white-space: nowrap;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-     }
+        height: 500%;
+        padding: 25px 0 0 0;
+        transform: translateX(-110%);
+        transition: transform 0.5s ease-in;
+        z-index:1000;
+      }
 
-     .link_content{
-      margin-right: 10px;
-     }
+      .nav-links li{
+        opacity: 0;
+        transition: transform 0.5s ease-in;
+      }
+
+      .nav-active{
+        transform: translateX(0);
+        background-color: rgba(255,255,255, 0.90);
+      }
+
+      @keyframes navLinkFade{
+        from{
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to{
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      .toggle .line1{
+        transform: rotate(-45deg) ;
+
+      }
+      .toggle .line2{
+        opacity: 0;
+      }
+      .toggle .line3{
+        transform: rotate(45deg) ;
+      }
+
  }
 
 /*Here finishes the MENU styling*/
