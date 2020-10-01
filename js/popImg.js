@@ -12,7 +12,7 @@ previews.forEach((preview) => {
 
         //Dynamic change text and image
         const originalSrc = preview.getAttribute('data-original');
-        original.src = `./img/p_artistsHouse/full/${originalSrc}`;
+        original.src = originalSrc;
 
         const altTitle = preview.alt;
         imgText.textContent = altTitle;
@@ -26,3 +26,6 @@ modal.addEventListener('click', (e) => {
         original.src = '';
 	}
 });
+
+
+// original.src = `./img/p_artistsHouse/full/${originalSrc}`;
