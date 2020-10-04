@@ -15,7 +15,13 @@ previews.forEach((preview) => {
         original.src = originalSrc;
 
         const altTitle = preview.alt;
-        imgText.textContent = altTitle;
+        const copy = preview.getAttribute('copy')
+        if (copy) {
+            imgText.textContent = `${altTitle}\n${copy}`;
+        } else {
+            imgText.textContent = altTitle;
+        };
+        
     });
 });
 

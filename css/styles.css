@@ -19,6 +19,7 @@ body {
     font-weight: 800;
     font-size: 140%;
     display: inline;
+    white-space: nowrap
 }
 
 .Title a{
@@ -106,7 +107,7 @@ body {
         display: inline-block;
         position: relative;
     }
-
+/*
       .nav-links{
         background-color: rgba(255,255,255, 0);
         position: absolute;
@@ -119,6 +120,34 @@ body {
         padding: 25px 0 0 0;
         transform: translateX(-110%);
         transition: transform 0.5s ease-in;
+        z-index:1000;
+      }
+*/
+      .nav-links{
+        background-color: rgba(255,255,255, 0);
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-top: 400px;
+        width: 100%;
+        height: 500%;
+        padding: 25px 0 0 0;
+        -webkit-transform: translateX(-110%);
+            -ms-transform: translateX(-110%);
+                transform: translateX(-110%);
+        -webkit-transition: -webkit-transform 0.5s ease-in;
+        transition: -webkit-transform 0.5s ease-in;
+        -o-transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
         z-index:1000;
       }
 
@@ -173,7 +202,8 @@ body {
     .container {
       position: relative;
       margin: 50px 0 0 0;
-      overflow-y: auto; 
+      overflow-y: auto;
+      overflow-x: hidden;
       /*display: none;*/
     }
 
@@ -224,6 +254,7 @@ body {
 
 
 /*Here finishes the PROJECTS SECTION styling*/
+
 /*Here starts the PROJECT LIST styling*/
 
 
@@ -263,6 +294,15 @@ th{
   text-align: left;
   vertical-align: center;
   font-size: 100%;
+}
+
+.experience{
+  max-width: 500px;
+}
+
+.studies{
+  max-width: 600px;
+
 }
 
 .thick {

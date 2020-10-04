@@ -1,3 +1,12 @@
+//Prevents from IMG download
+
+$(document).ready(function()
+{
+    $('img').bind('contextmenu', function(e){
+        return false;
+    }); 
+});
+
 /*
 $("a.link_projectMenu").click(function(){
     $(".projectList").hide(500);

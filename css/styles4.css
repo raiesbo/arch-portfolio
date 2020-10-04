@@ -4,7 +4,7 @@
 }
 
 .modal {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.75);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -22,7 +22,8 @@
 
 .full-img {
 	position: absolute;
-	height: 70%;
+	max-height: 75%;
+	max-width: 80%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0.5);
