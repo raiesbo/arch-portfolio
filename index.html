@@ -11,8 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/initAnimation.css">
         <link rel="icon" href="icons/favicon.ico" type="ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="sideBar">
@@ -23,7 +25,7 @@
 
             <ul class="nav-links">
                 <li>
-                    <a href="index.html" class="link_content" data-target="projects" ><strong>Portfolio</strong></a>
+                    <a href="portfolio.html" class="link_content" data-target="projects" ><strong>Portfolio</strong></a>
                 </li>
                 <li>
                     <a href="projectList.html" class="link_content" data-target="projectsList" >Projects List</a>
@@ -71,42 +73,42 @@
                     <p class="projectDescription">#rundzwei Architekten #Competition</p>
                 </div>
                 <div class="project">
-                    <a href="project_2.html"><img src="img/PFC_Thumbnail.png" alt="project picture"></a>
+                    <a href="project_2.html"><img src="img/PFC_Thumbnail.jpg" alt="project picture"></a>
                     <p class="projectTitle">Regeneration of the San Isidro district</p>
                     <p class="projectDescription">#AcademicProjekt #Urban #Facility</p>
                 </div>
-                <!--<div class="project">
-                    <a href="#"><img src="img/p_imDol_Thumbnail.jpg" alt="project picture"></a>
-                    <p class="projectTitle">Im Dol</p>
+                <div class="project">
+                    <a href="project_BahamHouse.html"><img src="img/bahamHouse_Thumbnail.jpg" alt="project picture"></a>
+                    <p class="projectTitle">Baham House <span class="projectDescription">| Built</span></p>
                     <p class="projectDescription">#Antonio Altarriba Arquitecto #Residencial</p>
                 </div>
                 <div class="project">
-                    <a href="#"><img src="img/p_imDol_Thumbnail.jpg" alt="project picture"></a>
-                    <p class="projectTitle">Im Dol</p>
+                    <a href="project_CañadaHouse.html"><img src="img/canadaHouse_Thumbnail.jpg" alt="project picture"></a>
+                    <p class="projectTitle">La Cañada House <span class="projectDescription">| Built</span></p>
                     <p class="projectDescription">#Antonio Altarriba Arquitecto #Residencial</p>
-                </div>-->
+                </div>
                 <div class="project">
-                    <a href="project_5.html"><img src="img/Delf-Dormitory_Thumbnail.png" alt="project picture"></a>
+                    <a href="project_5.html"><img src="img/Delf-Dormitory_Thumbnail.jpg" alt="project picture"></a>
                     <p class="projectTitle">Students Dormitory at TU Delf <span class="projectDescription">| 1st Prize</span></p>
                     <p class="projectDescription">#Competition #Residencial</p>
                 </div>
                 <div class="project">
-                    <a href="project_6.html"><img src="img/SecundarySchool_Thumbnail.png" alt="project picture"></a>
+                    <a href="project_6.html"><img src="img/SecundarySchool_Thumbnail.jpg" alt="project picture"></a>
                     <p class="projectTitle">High School in Warsaw</p>
                     <p class="projectDescription">#AcademicProjekt #Facility</p>
                 </div>
                 <div class="project">
-                    <a href="project_1.html"><img src="img/ArtistHouse_Thumbnail.png" alt="project picture"></a>
+                    <a href="project_1.html"><img src="img/ArtistHouse_Thumbnail.jpg" alt="project picture"></a>
                     <p class="projectTitle">House for an Artist</p>
                     <p class="projectDescription">#AcadenicProject #Residencial</p>
                 </div>
                 <div class="project">
-                    <a href="project_3.html"><img src="img/Rural-Hotel_Thumbnail.png" alt="project picture"></a>
+                    <a href="project_3.html"><img src="img/Rural-Hotel_Thumbnail.jpg" alt="project picture"></a>
                     <p class="projectTitle">Rural hotel in Requena</p>
                     <p class="projectDescription">#AcademicProjekt #Facility</p>
                 </div>
                 <div class="project">
-                    <a href="project_4.html"><img src="img/Concurso-Benitaxell_Thumbnail.png" alt="project picture"></a>
+                    <a href="project_4.html"><img src="img/Concurso-Benitaxell_Thumbnail.jpg" alt="project picture"></a>
                     <p class="projectTitle">Auditorium in Benitatxell</p>
                     <p class="projectDescription">#Competition #Facilities</p>
                 </div>
@@ -117,8 +119,37 @@
                 </div>
             </div>
 
+
   <!-- From here is all what we can modify for each page:-->
         </div>
+
+    <section class="backgroundAnimation">
+
+        <svg
+        class="logo"
+        id="filled"
+        width="150"
+        height="150"
+        viewBox="0 0 150 150"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M150 75C150 116.421 116.421 150 75 150C33.5786 150 0 116.421 0 75C0 33.5786 33.5786 0 75 0C116.421 0 150 33.5786 150 75Z" fill="black"/>
+        </svg>
+
+        <svg
+        class="logo"
+        id="stroke"
+        width="150"
+        height="150"
+        viewBox="0 0 150 150"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M149.5 75C149.5 116.145 116.145 149.5 75 149.5C33.8548 149.5 0.5 116.145 0.5 75C0.5 33.8548 33.8548 0.5 75 0.5C116.145 0.5 149.5 33.8548 149.5 75Z" stroke="black"/>
+        </svg>
+
+        <p class="logoText logo">REB</p>
+
+    </section>
 
         <script src="js/app.js" async defer></script>
         <script src="js/popMenu.js" async defer></script>

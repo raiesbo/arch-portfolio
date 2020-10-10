@@ -16,8 +16,8 @@ body {
 
 .Title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 140%;
+    font-weight: 900;
+    font-size: 130%;
     display: inline;
     white-space: nowrap
 }
@@ -60,7 +60,7 @@ body {
     font-weight: 300;
     display: block;
     margin-bottom: 15px;
-    transition: 300ms;
+    transition: 300ms ease;
 }
 
 .nav-links a:hover{

@@ -32,6 +32,7 @@
 	text-decoration: none;
 	animation-duration: 4s;
 	animation-name: text;
+	margin: 20px 0 20px 0;
 }
 
 .eachProject img{
@@ -40,8 +41,19 @@
 	animation-name: text;
 }
 
+.imgDescription{
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 75%;
+	animation-duration: 4s;
+	animation-name: text;
+	margin: 0;
+	padding: 3px 0 10px 0;
+}
+
 @media screen and (max-width: 768px) {
     .eachProject {
        padding-top: 20px;
     }
 }
+
