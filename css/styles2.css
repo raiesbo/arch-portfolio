@@ -43,12 +43,16 @@
 
 .imgDescription{
 	font-weight: 300;
-	text-decoration: none;
 	font-size: 75%;
 	animation-duration: 4s;
 	animation-name: text;
 	margin: 0;
 	padding: 3px 0 10px 0;
+}
+
+.imgDescription a{
+	color: black;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
