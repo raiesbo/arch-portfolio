@@ -1,9 +1,6 @@
 //Prevents from IMG download
 
-$(document).ready(function()
-{
-    $('img').bind('contextmenu', function(e){
-        return false;
-    }); 
-});
+const img = document.querySelectorAll('img');
+
+img.forEach(i => i.addEventListener('contextmenu', event => event.preventDefault()));
 
